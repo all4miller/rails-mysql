@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  nginx:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile.ps
+    env_file: ./docker/.env
+    ports:
+      - "80:80"
+      - "8080:8080"
+    container_name: nginx-pagespeed-test
