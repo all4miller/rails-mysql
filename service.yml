@@ -1,7 +1,7 @@
 ---
 services:
   pagespeed:
-    git_url: https://github.com/all4miller/docker-nginx-pagespeed.git
+    git_url: https://github.com/all4miller/rails-mysql
     git_branch: master
     ports: ["80::80", "8080::8080"]
     dockerfile_path: Dockerfile
